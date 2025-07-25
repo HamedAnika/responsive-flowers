@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Flowers</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/13a7081163.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <header>
-        <Nav class="flex">
+    <header class="max-w-6xl mx-auto">
+        <Nav class="flex justify-between items-center">
             <div>
-                <img class="w-44" src="./assets/logo.png" alt="">
+                <img class="w-44 h-24" src="./assets/logo.png" alt="">
             </div>
-            <div>
-                <ul class="flex">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">About us</a></li>
+            <div class="flex gap-10 items-center">
+                <ul class="flex gap-10">
+                    <li class="hidden md:block"><a href="">Home</a></li>
+                    <li class="hidden md:block"><a href="">Shop</a></li>
+                    <li class="hidden md:block"><a href="">About us</a></li>
                 </ul>
-            </div>
-            <div>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <h4>Cart ($56)</h4>
-
+                <div class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h4>Cart ($56)</h4>
+                </div>
             </div>
         </Nav>
     </header>
